@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <link rel="stylesheet" href="/assets/CSS/Style.css">
+<body>
+    <h1 id="title">Formulário</h1>
+    <p id="description">Preencha o Formulário</p>
+    <form method="post" id="survey-form">
+
+        <fieldset>
+            <label id="name-label">Digite seu nome: <input id="name" type="text" name="name" placeholder="Nome" required></label>
+
+            <label id="email-label">Digite seu email: <input id="email" type="email" name="email" placeholder="Email" required></label>
+
+            <label id="number-label">Idade: <input id="number" type="number" name="age" min="13" max="120" placeholder="Idade" required></label>
+        </fieldset>
+
+        <select id="dropdown" name="category">
+            <option>(selecione uma opção)</option>
+            <option>Notícias</option>
+            <option>Canal do YouTube</option>
+            <option>Outro</option>
+        </select>
+
+        <fieldset class="account-type">
+            <legend>Tipo de Conta (obrigatório)</legend>
+            <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Pessoal</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Empresarial</label>
+        </fieldset>
+
+        <label>
+            <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> Concordo com os <a href="https://www.freecodecamp.org/news/terms-of-service/">termos e condições</a>
+        </label>
+
+        <label for="comments">Comentários:</label>
+        <textarea id="comments" name="comments"></textarea>
+
+        <input id="submit" type="submit"> 
+    </form>
+    <script src="/Formulario/assets/JS/app.JS"></script>
+</body>
+</html>
